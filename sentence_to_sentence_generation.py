@@ -57,7 +57,7 @@ sentence_end_token = "SENTENCE_END"
 '''*************************************PROCESSING ASTRONOMY BOOK TEXT**************************'''
 # Read the data and append SENTENCE_START and SENTENCE_END tokens
 print ("Reading text file...")
-text = open('allarticles/AstronomyBookWikiAll_shortened.txt').read()
+text = open('AstronomyWikiBook.txt').read()
 
 '''here you add code to filter out wikipedia references and more'''
 text = re.sub('(Further reading|Bibliography|Books|External links|See also|Sources|References|Cited texts)\n\n(- .+\n|  .+\n)*', '',text)
